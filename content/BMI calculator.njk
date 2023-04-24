@@ -27,3 +27,16 @@ numberOfLatestPostsToShow: 3
 </ul>
 
 #}
+// Function to calculate BMI
+function calculateBMI(weight, height) {
+  const heightSquared = height * height; // Calculate height squared
+  const bmi = weight / heightSquared; // Calculate BMI
+  return bmi;
+}
+
+// Example usage
+const weight = parseFloat(prompt('Enter your weight in kilograms: '));
+const height = parseFloat(prompt('Enter your height in meters: '));
+
+const bmi = calculateBMI(weight, height);
+console.log('Your BMI is: ' + bmi.toFixed(2)); // Print BMI with two decimal places

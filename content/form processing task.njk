@@ -1,0 +1,49 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: form processing task
+  order: 1
+numberOfLatestPostsToShow: 0
+---
+
+<div class="email-form">
+  <form>
+  <label for="fname">First Name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+    
+      <label for="text">Surname:</label><br>
+  <input type="text" id="Surname" name="Surname">
+  <br>
+    
+  <label for="email">Email:</label>
+  <br>
+  <input type="email" id="email" name="email">
+    <br>
+
+<label for="message">Message:</label>
+<br>
+<textarea id="message" name="message">
+</textarea>
+<br>
+    
+
+</form>
+</div>
+
+<fieldset>
+    <legend>Sign up to:</legend>
+
+    <div>
+      <input type="checkbox" id="Terms-and-conditions" name="terms-and-conditions" checked>
+      <label for="terms-and-conditions">Terms and Conditions</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="MC" name="MC">
+      <label for="MC">MC</label>
+    </div>
+</fieldset>
+
+<form>
+  <input type="submit" value="Submit">
+</form>
